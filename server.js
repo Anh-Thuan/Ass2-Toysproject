@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-mongoose.connect('mongodb+srv://itssony2003:anhthuan123@cluster0.l12wjxc.mongodb.net/');
+mongoose.connect('mongodb+srv://root:anhthuan123@cluster0.oufird5.mongodb.net/');
 const db = mongoose.connection;
 db.on("error", (error) => console.log(error));
 db.once("open", () => console.log("Connected to the database!"));
